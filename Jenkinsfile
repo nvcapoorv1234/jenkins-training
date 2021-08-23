@@ -7,7 +7,7 @@ pipeline {
       steps {
         sh 'echo "Hello World"'
         sh 'echo "This is stage 1 - Compile"'
-        sh 'echo "Building ${PROJECTNAME} Version ${currentBuild.number}"'
+        sh 'echo "Building ${PROJECTNAME} Version ${BUILD_NUMBER}"'
       }
     }
     stage('Test') {
