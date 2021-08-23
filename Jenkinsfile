@@ -2,7 +2,6 @@ pipeline {
   agent any
   parameters {
     string(name: 'projectName', defaultValue: 'psapp', description: 'Project name to create or target for update')
-    choice(name: 'EXISTING', choices: ['yes'], defaultValue: 'yes', description: 'Does Moodle database already exist?')
   }
 
   stages {
